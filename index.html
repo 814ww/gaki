@@ -3,223 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Accord Keepers Initiative</title>
+    <title>MetroServer - Minecraft Server</title>
     <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 80px;
             color: #333;
         }
-
-        /* Top Bar */
-        header {
-            background: linear-gradient(to right, #006400, #004d00);
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            position: relative;
+        .status {
+            font-size: 24px;
+            margin-top: 20px;
         }
-        header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background-color: #FFC642;
-        }
-        header .menu {
-            display: flex;
-            gap: 20px;
-            font-size: 18px;
-        }
-        header .menu a {
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        header .menu a:hover {
-            color: #FFC642;
-            transform: scale(1.1);
-        }
-        header .language {
-            display: flex;
-            gap: 15px;
-        }
-        header .language a {
-            color: #FFC642;
+        .status span {
+            color: green;
             font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s;
         }
-        header .language a:hover {
-            color: white;
-            transform: scale(1.1);
-        }
-
-        /* Image Section */
-        .image-section {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .image-section img {
-            width: 200px; /* Set a fixed width */
-            height: auto; /* Keep the aspect ratio intact */
-            margin: 0 auto; /* Center the image horizontally */
-        }
-
-        /* Video Section */
-        .video-section {
-            text-align: center;
-            margin-top: 50px;
-        }
-        .video-section iframe {
-            width: 80%;
-            height: 500px;
-        }
-
-        /* General Section */
-        .general-section {
-            text-align: center;
-            margin-top: 50px;
-        }
-        .general-section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #920035;
-            text-align: center;
-        }
-        .thumbnails {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
+        .ip-box {
             margin-top: 30px;
-        }
-        .thumbnail {
-            width: 23%;
-            transition: all 0.3s;
-        }
-        .thumbnail img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .thumbnail:hover {
-            transform: scale(1.05);
-        }
-
-        /* Footer */
-        footer {
-            background-color: #006400;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
-        footer .footer-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        footer .footer-buttons a {
-            color: #FFC642;
-            text-decoration: none;
             font-size: 20px;
+            background: white;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        footer .footer-buttons a:hover {
-            text-decoration: underline;
+        .location {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #666;
         }
-
-        /* Rights Reserved */
-        .rights-reserved {
-            background-color: #004d00;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        /* Hover Effects */
-        .footer-buttons a,
-        header .menu a,
-        header .language a {
-            transition: all 0.3s;
-        }
-        .footer-buttons a:hover,
-        header .menu a:hover,
-        header .language a:hover {
-            transform: scale(1.1);
-        }
-
     </style>
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="members.html">Members</a>
-            <a href="history.html">Brief History</a>
-            <a href="researches.html">Researches</a> <!-- New Researches Button -->
-        </div>
-        <div class="language">
-            <a href="#">English</a>
-            <a href="#">عربي</a>
-        </div>
-    </header>
-
-    <!-- Image Section -->
-    <div class="image-section">
-        <img src="logo.png" alt="GAKI Logo">
-    </div>
-
-    <!-- Video Section -->
-    <div class="video-section">
-        <iframe src="https://www.youtube.com/embed/somevideo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <!-- General Section -->
-    <div class="general-section">
-        <h2>General</h2>
-        <div class="thumbnails">
-            <div class="thumbnail">
-                <img src="image1.png" alt="Thumbnail 1">
-            </div>
-            <div class="thumbnail">
-                <img src="thumb2.jpg" alt="Thumbnail 2">
-            </div>
-            <div class="thumbnail">
-                <img src="thumb3.jpg" alt="Thumbnail 3">
-            </div>
-            <div class="thumbnail">
-                <img src="thumb4.jpg" alt="Thumbnail 4">
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-buttons">
-            <a href="#">YouTube</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
-
-    <!-- Rights Reserved -->
-    <div class="rights-reserved">
-        <p>All Rights Reserved© 2021, Directorate of Cyber Security and Information Technology</p>
-    </div>
-
+    <h1>MetroServer</h1>
+    <div class="status">Status: <span>&#x2B24; Online</span></div>
+    <div class="ip-box">Server IP: <b>46.4.224.103:25518</b></div>
+    <div class="location">Location: China</div>
 </body>
 </html>
